@@ -13,7 +13,9 @@ SDK Core| v1.0.3 | [symbol-sdk](https://www.npmjs.com/package/symbol-sdk)
 Catbuffer | v1.0.1 | [catbuffer-typescript](https://www.npmjs.com/package/catbuffer-typescript)
 Client Library | v1.0.2  | [symbol-openapi-typescript-fetch-client](https://www.npmjs.com/package/symbol-openapi-typescript-fetch-client)
 
-- fix: replaced `instanceof` statements. These statements are problematic when npm installs the dependency in multiples modules. 
+- fix: Improved message API.
+- fix: EncryptedMessage payload wasn't reproducible.
+- fix: replaced `instanceof` statements. These statements are problematic when npm installs the dependency in multiples modules.
 
 ## [1.0.2] - 25-Oct-2021
 
