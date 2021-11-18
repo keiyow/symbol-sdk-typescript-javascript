@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2016",
+    "module": "esnext",
+    "target": "es2018",
     "noImplicitAny": false,
     "strictNullChecks": true,
     "preserveConstEnums": true,
@@ -14,7 +14,7 @@
     "allowJs": false,
     "skipLibCheck": true,
     "lib": [
-      "es2017",
+      "es2018",
       "dom"
     ],
     "typeRoots": [

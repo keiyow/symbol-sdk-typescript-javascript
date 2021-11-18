@@ -23,12 +23,12 @@ import {
     NamespacePathBuilder,
     RootNamespaceHistoryBuilder,
 } from 'catbuffer-typescript';
+import { fromBits } from 'long';
 import { Address } from '../account/Address';
 import { UInt64 } from '../UInt64';
 import { Alias } from './Alias';
 import { NamespaceId } from './NamespaceId';
 import { NamespaceRegistrationType } from './NamespaceRegistrationType';
-import Long = require('long');
 
 /**
  * Object containing information of a namespace.
@@ -203,8 +203,8 @@ export class NamespaceInfo {
      */
     private sortNamespaceInfo(info: NamespaceInfo[]): NamespaceInfo[] {
         return info.sort((a, b) => {
-            const long_a = Long.fromBits(a.id.id.lower, a.id.id.higher, true);
-            const long_b = Long.fromBits(b.id.id.lower, b.id.id.higher, true);
+            const long_a = fromBits(a.id.id.lower, a.id.id.higher, true);
+            const long_b = fromBits(b.id.id.lower, b.id.id.higher, true);
             return long_a.compare(long_b);
         });
     }
