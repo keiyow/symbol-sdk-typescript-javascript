@@ -3,6 +3,7 @@
     "version": "1.0.3",
     "description": "Reactive symbol sdk for typescript and javascript",
     "scripts": {
+        "prepare": "npm run build",
         "pretest": "npm run build",
         "prepack": "npm run build",
         "test": "mocha --ui bdd --recursive ./dist/test --timeout 90000 --unhandled-rejections=strict ",
@@ -30,6 +31,9 @@
         "bootstrap-compose": "symbol-bootstrap compose -t target/bootstrap-test",
         "bootstrap-config": "symbol-bootstrap config -p bootstrap -c ./e2e/e2e-preset.yml -t target/bootstrap-test"
     },
+    "files": [
+        "dist"
+    ],
     "pre-commit": [
         "lint"
     ],
