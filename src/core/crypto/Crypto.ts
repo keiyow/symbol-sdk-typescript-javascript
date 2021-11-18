@@ -21,7 +21,7 @@ import { KeyPair } from './KeyPair';
 import * as utility from './Utilities';
 
 export class Crypto {
-    private static AES_ALGO = 'aes-256-gcm';
+    private static AES_ALGO = 'aes-256-gcm' as crypto.CipherGCMTypes;
     /**
      * Encrypt data
      * @param {string} data
